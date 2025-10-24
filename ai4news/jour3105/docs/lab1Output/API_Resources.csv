@@ -1,0 +1,4 @@
+Endpoint,Method,Description,Required_Parameters,Optional_Parameters,Response_Fields
+/v2/everything,GET,Search through millions of articles from over 150000 sources,apiKey,"q,searchIn,sources,domains,excludeDomains,from,to,language,sortBy,pageSize,page","status,totalResults,articles[source,author,title,description,url,urlToImage,publishedAt,content]"
+/v2/top-headlines,GET,Get live top and breaking headlines,apiKey,"country,category,sources,q,pageSize,page","status,totalResults,articles[source,author,title,description,url,urlToImage,publishedAt,content]"
+/v2/top-headlines/sources,GET,Get available news sources for top headlines,apiKey,"category,language,country","status,sources[id,name,description,url,category,language,country]"

@@ -1,0 +1,29 @@
+AI Agents for Research: Transforming Education Research Workflows
+
+Date: 24 October 2025
+Time: 18:30 - 20:30
+Venue: Meng Wah Complex 703-704
+Host: Prof Yongyan Li, HKU
+Facilitator: Dr Simon Wang, HKBU
+
+Abstract:
+
+This interactive workshop introduces HKU research students to the transformative potential of AI agents in education research. Unlike traditional chatbots that require constant context switching, AI agents provide seamless, integrated workflows that eliminate the need for copy-paste operations between tools and environments.
+
+The workshop features three comprehensive demonstrations:
+
+1. Introduction to AI Agents: Experience the fundamental differences between AI agents and chatbots, learning to leverage direct file system access, autonomous code generation, and persistent memory across sessions.
+
+2. Explore Litstudy: Discover how AI agents integrate with litstudy, an open-source Python package for systematic literature reviews, enabling automated citation network analysis, author collaboration mapping, and topic modeling.
+
+3. New Use Cases: An open-ended exploration where students brainstorm innovative applications of AI agents in their own research contexts, followed by collaborative prototyping of selected ideas.
+
+Through hands-on activities using Jupyter notebooks, participants will practice file management, code generation, literature analysis, and research planning. The workshop emphasizes practical applications, showing how AI agents can enhance research productivity, improve literature review efficiency, and enable more sophisticated research methodologies.
+
+By the end of the workshop, participants will have hands-on experience with AI agent capabilities, understand their integration with research tools, and be equipped to apply these technologies to their own research projects.
+
+Learning Outcomes: Participants will gain proficiency in AI agent usage, enhanced literature review capabilities, improved research productivity, and practical skills for integrating AI agents into their research workflows. The open-ended "New Use Cases" section encourages creative thinking and collaborative problem-solving, enabling students to explore innovative applications and rapidly prototype solutions for their specific research needs.
+
+Prerequisites: AI agent access (GitHub Copilot, ChatGPT, or similar), basic Python knowledge, and willingness to explore new technologies.
+
+Contact: Prof Yongyan Li (yongyan@hku.hk) or Dr Simon Wang (simonwang@hkbu.edu.hk)

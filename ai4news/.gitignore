@@ -1,0 +1,24 @@
+# Root ignore for ai4news
+# Ignore nested cloned repos kept locally for reference
+/agent4hku/
+/news-api/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Environments
+.env
+**/.env
+.venv/
+**/.venv/
+
+# Jupyter and notebooks
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
