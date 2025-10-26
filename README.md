@@ -4,7 +4,7 @@ A comprehensive project for AI-powered news analysis, journalism education, and 
 
 ## 🚀 Project Overview
 
-This repository contains multiple components for AI-driven news analysis and journalism education:
+This workspace aggregates references and teaching materials for AI and news workflows, containing multiple components for AI-driven news analysis and journalism education:
 
 - **News API Integration**: Complete implementation with full text extraction
 - **Journalism Education**: Lab materials and exercises for JOUR3105
@@ -16,11 +16,12 @@ This repository contains multiple components for AI-driven news analysis and jou
 ```
 AI4news/
 ├── ai4news/                          # Core AI4News project
-│   ├── Admin/                        # Administrative materials
-│   ├── introduction_to_agent/        # AI agent education materials
+│   ├── Admin/                        # Administrative materials and slides
+│   ├── introduction_to_agent/        # AI agent education materials (from Agent4HKU)
 │   └── jour3105/                     # Journalism course materials
 │       ├── docs/                     # Documentation and labs
-│       │   └── lab1Output/           # Lab 1: News API with full text extraction
+│       │   ├── lab1Output/           # Lab 1: News API with full text extraction
+│       │   └── lab2Output/           # Lab 2: AI & LLM News Analysis Dashboard
 │       ├── scripts/                  # Python scripts for news processing
 │       └── newsAPI.md               # News API documentation
 ├── copilot-news-insights/            # React web application
@@ -41,12 +42,19 @@ AI4news/
 - `test_news_api_enhanced.py` - Python program with full text extraction
 - Multiple CSV files with structured data
 
-### Key Achievements
-✅ **Full Text Extraction**: Successfully extracted complete articles from URLs  
-✅ **Smart Content Detection**: Handles various website structures  
-✅ **Error Handling**: Robust retry logic and error management  
-✅ **Data Export**: Multiple output formats (CSV, Markdown)  
-✅ **Documentation**: Comprehensive API usage guide  
+## 🤖 Lab 2: AI & LLM News Analysis Dashboard
+
+### Features
+- **Multi-query Search**: 3 different search strategies for diverse AI/LLM articles
+- **Interactive Dashboard**: Real-time search, filtering, and visualization
+- **Data Collection**: Python script that fetched 43 unique articles
+- **Visualization**: Interactive charts and article cards
+
+### Files Generated
+- `fetch_ai_news.py` - Python script for data collection
+- `ai_news_dashboard.html` - Interactive HTML dashboard
+- `ai_news_articles.json` - Generated data with 43 articles
+- `Lab2_Description.md` - Detailed use case documentation
 
 ## 🛠️ Technical Implementation
 
@@ -61,22 +69,27 @@ AI4news/
 pip install requests beautifulsoup4
 ```
 
-### Usage Example
+### Usage Examples
 ```python
-# Run the enhanced News API test
+# Run Lab 1: Enhanced News API test
+cd ai4news/jour3105/docs/lab1Output
 python3 test_news_api_enhanced.py
+
+# Run Lab 2: AI/LLM news analysis
+cd ai4news/jour3105/docs/lab2Output
+python3 fetch_ai_news.py
 ```
 
 ## 📊 Sample Results
 
-### Full Text Articles Retrieved
+### Lab 1: Full Text Articles Retrieved
 1. **"Anthropic inks multibillion-dollar deal with Google for AI chips"** (1,274 characters)
 2. **"Microsoft AI chief says company won't build chatbots for erotica"** (275 characters)
 
-### API Test Results
-- **Everything Endpoint**: 15,275 total results
-- **Top Headlines**: 43 total results  
-- **Sources**: 10 technology sources found
+### Lab 2: AI/LLM News Analysis
+- **43 unique articles** about AI and Large Language Models
+- **36 unique sources** from diverse news outlets
+- **Interactive dashboard** with search, filtering, and visualization
 
 ## 🎯 Use Cases
 
@@ -86,6 +99,45 @@ python3 test_news_api_enhanced.py
 4. **Brand Monitoring**: Track company/product mentions
 5. **Research**: Analyze news patterns and sources
 6. **Full Text Analysis**: Extract complete articles for detailed analysis
+7. **AI/LLM Research**: Specialized analysis of artificial intelligence news
+
+## 📚 Educational Materials
+
+### JOUR3105 - Journalism Course
+- **Lab 1**: News API basics and full text extraction
+- **Lab 2**: AI & LLM news analysis with interactive dashboard
+- **Documentation**: Comprehensive API usage guides
+- **Examples**: Working code samples and test results
+
+### AI Agent Introduction
+- **Capabilities Demo**: AI agent features and applications
+- **Lab Materials**: Step-by-step exercises
+- **Documentation**: Learning resources and guides
+
+## 🚀 Getting Started
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/tesolchina/ai4news.git
+   cd ai4news
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the labs**:
+   ```bash
+   # Lab 1: News API with full text extraction
+   cd ai4news/jour3105/docs/lab1Output
+   python3 test_news_api_enhanced.py
+   
+   # Lab 2: AI/LLM news analysis
+   cd ai4news/jour3105/docs/lab2Output
+   python3 fetch_ai_news.py
+   # Then open ai_news_dashboard.html in your browser
+   ```
 
 ## 🔒 Important Notes
 
@@ -100,42 +152,6 @@ python3 test_news_api_enhanced.py
 - Implement respectful scraping practices
 - Use proper User-Agent headers
 - Respect robots.txt files
-
-## 🚀 Getting Started
-
-1. **Clone the repository**:
-   ```bash
-   git clone <repository-url>
-   cd AI4news
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Run the News API lab**:
-   ```bash
-   cd ai4news/jour3105/docs/lab1Output
-   python3 test_news_api_enhanced.py
-   ```
-
-4. **View results**:
-   - Check `Enhanced_API_Test_Results.md` for full text articles
-   - Review CSV files for structured data
-   - Read `API_Services_Explanation.md` for documentation
-
-## 📚 Educational Materials
-
-### JOUR3105 - Journalism Course
-- **Lab 1**: News API basics and full text extraction
-- **Documentation**: Comprehensive API usage guides
-- **Examples**: Working code samples and test results
-
-### AI Agent Introduction
-- **Capabilities Demo**: AI agent features and applications
-- **Lab Materials**: Step-by-step exercises
-- **Documentation**: Learning resources and guides
 
 ## 🤝 Contributing
 
@@ -157,4 +173,4 @@ This project is for educational use. Please respect the terms of service of all 
 
 ---
 
-**Note**: This project demonstrates advanced news API integration with full text extraction capabilities, suitable for journalism education and news analysis applications.
+**Note**: This project demonstrates advanced news API integration with full text extraction capabilities and AI/LLM news analysis, suitable for journalism education and news analysis applications.

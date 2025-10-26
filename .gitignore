@@ -1,8 +1,15 @@
+# Root ignore for ai4news
+# Ignore nested cloned repos kept locally for reference
+/agent4hku/
+/news-api/
+
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
+*.pyo
+*.pyd
 *.so
+*$py.class
 .Python
 build/
 develop-eggs/
@@ -24,6 +31,8 @@ wheels/
 venv/
 env/
 ENV/
+.venv/
+**/.venv/
 
 # IDE
 .vscode/
@@ -31,12 +40,17 @@ ENV/
 *.swp
 *.swo
 
+# Jupyter and notebooks
+.ipynb_checkpoints/
+
 # OS
 .DS_Store
+Thumbs.db
 Thumbs.db
 
 # API Keys (if any)
 .env
+**/.env
 *.key
 
 # Logs

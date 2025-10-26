@@ -1,0 +1,89 @@
+# Agent2HKU .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data files (large datasets)
+*.csv
+*.json
+*.xlsx
+*.xls
+*.pdf
+*.bed
+*.vcf
+*.fasta
+*.fastq
+
+# Allow workshop announcement
+!workshop_announcement.txt
+
+# Output files
+outputs/
+results/
+logs/
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# API keys and secrets
+.env
+config.ini
+secrets.json
+
+# Large model files
+*.model
+*.pkl
+*.joblib
+
+# R files
+.Rhistory
+.RData
+.Ruserdata
+
+# Node modules (if using any JS tools)
+node_modules/
+
+# Backup files
+*.bak
+*.backup
