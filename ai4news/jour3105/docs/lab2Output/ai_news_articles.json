@@ -1,0 +1,855 @@
+{
+  "metadata": {
+    "fetch_date": "2025-10-25T07:23:41.843554",
+    "total_articles": 43,
+    "search_queries": [
+      "(artificial intelligence OR AI OR machine learning) AND (large language model OR LLM OR GPT OR ChatGPT)",
+      "artificial intelligence AND (ChatGPT OR OpenAI OR Google Bard)",
+      "machine learning AND (transformer OR neural network OR deep learning)"
+    ],
+    "api_endpoint": "https://newsapi.org/v2/everything"
+  },
+  "statistics": {
+    "total_articles": 43,
+    "unique_sources": 36,
+    "source_distribution": {
+      "Yahoo Entertainment": 1,
+      "International Business Times": 1,
+      "Amazon.com": 2,
+      "Telecompetitor": 1,
+      "GlobeNewswire": 3,
+      "Nextgov": 1,
+      "IPWatchdog.com": 1,
+      "Finextra": 3,
+      "Phys.Org": 1,
+      "Verdict": 1,
+      "Plos.org": 1,
+      "SlashGear": 1,
+      "SiliconANGLE News": 2,
+      "Linkedin.com": 1,
+      "Livemint": 1,
+      "ZDNet": 2,
+      "The Daily Caller": 1,
+      "The Times of India": 1,
+      "Al Jazeera English": 1,
+      "New York Post": 1,
+      "Rolling Out": 1,
+      "Business Insider": 1,
+      "ScienceAlert": 1,
+      "Substack.com": 1,
+      "Serpapi.com": 1,
+      "KPBS": 1,
+      "Pypi.org": 1,
+      "Soldiersystems.net": 1,
+      "Hyperallergic": 1,
+      "Line25.com": 1,
+      "GamesRadar+": 1,
+      "PlayStation LifeStyle": 1,
+      "Forbes": 1,
+      "Financial Post": 1,
+      "Thoughtcatalog.com": 1,
+      "Github.io": 1
+    },
+    "date_range": {
+      "earliest": "2025-09-28",
+      "latest": "2025-10-23"
+    },
+    "word_count_stats": {
+      "average": 32.651162790697676,
+      "min": 27,
+      "max": 40
+    }
+  },
+  "query_results": [
+    {
+      "query": "(artificial intelligence OR AI OR machine learning) AND (large language model OR LLM OR GPT OR ChatGPT)",
+      "articles_found": 19,
+      "stats": {
+        "total_articles": 19,
+        "unique_sources": 16,
+        "source_distribution": {
+          "Yahoo Entertainment": 1,
+          "International Business Times": 1,
+          "Amazon.com": 1,
+          "Telecompetitor": 1,
+          "GlobeNewswire": 2,
+          "Nextgov": 1,
+          "IPWatchdog.com": 1,
+          "Finextra": 2,
+          "Phys.Org": 1,
+          "Verdict": 1,
+          "Plos.org": 1,
+          "SlashGear": 1,
+          "SiliconANGLE News": 2,
+          "Linkedin.com": 1,
+          "Livemint": 1,
+          "ZDNet": 1
+        },
+        "date_range": {
+          "earliest": "2025-10-22",
+          "latest": "2025-10-23"
+        },
+        "word_count_stats": {
+          "average": 31.94736842105263,
+          "min": 29,
+          "max": 39
+        }
+      }
+    },
+    {
+      "query": "artificial intelligence AND (ChatGPT OR OpenAI OR Google Bard)",
+      "articles_found": 9,
+      "stats": {
+        "total_articles": 9,
+        "unique_sources": 9,
+        "source_distribution": {
+          "The Daily Caller": 1,
+          "The Times of India": 1,
+          "Al Jazeera English": 1,
+          "New York Post": 1,
+          "Rolling Out": 1,
+          "Business Insider": 1,
+          "ZDNet": 1,
+          "GlobeNewswire": 1,
+          "Finextra": 1
+        },
+        "date_range": {
+          "earliest": "2025-09-28",
+          "latest": "2025-10-23"
+        },
+        "word_count_stats": {
+          "average": 31.77777777777778,
+          "min": 27,
+          "max": 37
+        }
+      }
+    },
+    {
+      "query": "machine learning AND (transformer OR neural network OR deep learning)",
+      "articles_found": 19,
+      "stats": {
+        "total_articles": 19,
+        "unique_sources": 18,
+        "source_distribution": {
+          "ScienceAlert": 1,
+          "Substack.com": 1,
+          "Yahoo Entertainment": 1,
+          "Serpapi.com": 1,
+          "KPBS": 1,
+          "Pypi.org": 1,
+          "Soldiersystems.net": 1,
+          "International Business Times": 1,
+          "Hyperallergic": 1,
+          "Line25.com": 1,
+          "Amazon.com": 2,
+          "GamesRadar+": 1,
+          "PlayStation LifeStyle": 1,
+          "Telecompetitor": 1,
+          "Forbes": 1,
+          "Financial Post": 1,
+          "Thoughtcatalog.com": 1,
+          "Github.io": 1
+        },
+        "date_range": {
+          "earliest": "2025-10-23",
+          "latest": "2025-10-23"
+        },
+        "word_count_stats": {
+          "average": 33.73684210526316,
+          "min": 29,
+          "max": 40
+        }
+      }
+    }
+  ],
+  "articles": [
+    {
+      "title": "Google, Anthropic Announce Cloud Deal Worth Tens of Billions",
+      "description": "The arrangement, announced Thursday, gives Anthropic vastly more computing capacity while cementing Google’s position as both a major investor and key...",
+      "author": "Davey Alba, Ed Ludlow and Rachel Metz",
+      "source": {
+        "id": null,
+        "name": "Yahoo Entertainment"
+      },
+      "url": "https://finance.yahoo.com/news/google-anthropic-announce-cloud-deal-204519600.html",
+      "urlToImage": "https://s.yimg.com/ny/api/res/1.2/.7ZQUk2lH56D0FOnkF569A--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD03OTY-/https://media.zenfs.com/en/bloomberg_holding_pen_162/bde3284f7feb7a4bdea134a609747cc2",
+      "publishedAt": "2025-10-23T22:37:44Z",
+      "publishedAtFormatted": "2025-10-23 22:37:44 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "(Bloomberg) -- Alphabet Inc.s Google will supply up to 1 million of its specialized AI chips to Anthropic PBC, a deal worth tens of billions of dollars that deepens its partnership with the fast-grow… [+2655 chars]",
+      "wordCount": 36
+    },
+    {
+      "title": "Reddit Sues Perplexity in Shocking AI Data Scraping Scandal",
+      "description": "Reddit has filed a federal lawsuit against Perplexity AI and other firms over alleged large-scale data scraping, accusing them of illegally mining Reddit's user-generated content to train AI models without consent.",
+      "author": "Tanmay Puri",
+      "source": {
+        "id": null,
+        "name": "International Business Times"
+      },
+      "url": "https://www.ibtimes.com/reddit-sues-perplexity-shocking-ai-data-scraping-scandal-3788242",
+      "urlToImage": "https://d.ibtimes.com/en/full/4589875/reddit.jpg",
+      "publishedAt": "2025-10-23T21:48:11Z",
+      "publishedAtFormatted": "2025-10-23 21:48:11 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "Reddit is now in a big legal fight against AI that could set precedents, filing a federal lawsuit against Perplexity AI and three other entities for allegedly harvesting the social platform's vast re… [+3716 chars]",
+      "wordCount": 35
+    },
+    {
+      "title": "Generate Gremlin queries using Amazon Bedrock models",
+      "description": "In this post, we explore an innovative approach that converts natural language to Gremlin queries using Amazon Bedrock models such as Amazon Nova Pro, helping business analysts and data scientists access graph databases without requiring deep technical expert…",
+      "author": "Rachel Hanspal",
+      "source": {
+        "id": null,
+        "name": "Amazon.com"
+      },
+      "url": "https://aws.amazon.com/blogs/machine-learning/generate-gremlin-queries-using-amazon-bedrock-models/",
+      "urlToImage": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/09/26/latency-cost-graph-1260x400.png",
+      "publishedAt": "2025-10-23T20:57:29Z",
+      "publishedAtFormatted": "2025-10-23 20:57:29 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "Graph databases have revolutionized how organizations manage complex, interconnected data. However, specialized query languages such as Gremlin often create a barrier for teams looking to extract ins… [+16497 chars]",
+      "wordCount": 29
+    },
+    {
+      "title": "From Automation to Autonomy: How AI Agents Are Redefining Network Operations in Fixed Access Networks",
+      "description": "From Automation to Autonomy: How AI Agents Are Redefining Network Operations in Fixed Access Networks\nFor years, telecom operators have relied on automation and machine learning to manage increasingly complex networks. These tools have made operations faster …",
+      "author": "Sireesha Kora",
+      "source": {
+        "id": null,
+        "name": "Telecompetitor"
+      },
+      "url": "https://www.telecompetitor.com/from-automation-to-autonomy-how-ai-agents-are-redefining-network-operations-in-fixed-access-networks/",
+      "urlToImage": null,
+      "publishedAt": "2025-10-23T20:50:34Z",
+      "publishedAtFormatted": "2025-10-23 20:50:34 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "For years, telecom operators have relied on automation and machine learning to manage increasingly complex networks. These tools have made operations faster and more efficient, yielding improvements … [+5785 chars]",
+      "wordCount": 30
+    },
+    {
+      "title": "AI Adoption on the Rise: A Global Market Perspective on Innovation and Impact",
+      "description": "“Exploring Regional Trends, Technological Innovations, and Regulatory Frameworks Driving the Worldwide Integration of Artificial Intelligence Across Hardware, Software, and Services” “Exploring Regional Trends, Technological Innovations, and Regulatory Framew…",
+      "author": "BCC Research LLC",
+      "source": {
+        "id": null,
+        "name": "GlobeNewswire"
+      },
+      "url": "https://www.globenewswire.com/news-release/2025/10/23/3172394/0/en/AI-Adoption-on-the-Rise-A-Global-Market-Perspective-on-Innovation-and-Impact.html",
+      "urlToImage": "https://ml.globenewswire.com/Resource/Download/c6629cf3-8bc7-4bae-9bf7-bd5bef48bb25",
+      "publishedAt": "2025-10-23T18:37:00Z",
+      "publishedAtFormatted": "2025-10-23 18:37:00 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "Boston, Oct. 23, 2025 (GLOBE NEWSWIRE) -- The global landscape is undergoing a transformative shift with the rapid evolution of artificial intelligence. The new BCC Research report, AI Adoption: A Gl… [+5941 chars]",
+      "wordCount": 33
+    },
+    {
+      "title": "Industry groups push to keep open-source measures in annual intelligence bill",
+      "description": "They’re backing provisions in the House version of the Intelligence Authorization Act. But multiple intelligence community elements are hesitant about the measures, people familiar say.",
+      "author": "David DiMolfetta",
+      "source": {
+        "id": null,
+        "name": "Nextgov"
+      },
+      "url": "https://www.nextgov.com/defense/2025/10/industry-groups-push-keep-open-source-measures-annual-intelligence-bill/409018/",
+      "urlToImage": "https://cdn.nextgov.com/media/img/cd/2025/10/23/GettyImages_10188619/open-graph.jpg",
+      "publishedAt": "2025-10-23T18:21:00Z",
+      "publishedAtFormatted": "2025-10-23 18:21:00 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "A coalition of industry groups and former officials is asking Congress to preserve measures in the annual intelligence community authorization bill that support the use of open-source intelligence in… [+6148 chars]",
+      "wordCount": 31
+    },
+    {
+      "title": "Is AI the Answer for Meeting Patent Enablement Requirements?",
+      "description": "Growing consensus is emerging that artificial intelligence (AI) may assist biotechnology and life sciences companies to draft patents that satisfy written description and enablement requirements. The U. S. Supreme Court’s decision in Amgen Inc. v. Sanofi reit…",
+      "author": "Laura Smalley",
+      "source": {
+        "id": null,
+        "name": "IPWatchdog.com"
+      },
+      "url": "https://ipwatchdog.com/2025/10/23/ai-answer-meeting-patent-enablement-requirements/",
+      "urlToImage": "https://ipwatchdog.com/wp-content/uploads/2025/10/Depositphotos_720668824_S.jpg",
+      "publishedAt": "2025-10-23T17:15:44Z",
+      "publishedAtFormatted": "2025-10-23 17:15:44 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "In the wake of Amgen v. Sanofi, numerous excellent articles have explored how AI might help overcome the written description and enablement requirements facing biotechnology and life sciences patents… [+11188 chars]",
+      "wordCount": 31
+    },
+    {
+      "title": "How smart FIs are achieving their AI transformation targets",
+      "description": "Discover the most successful AI use cases in banking.",
+      "author": "Editorial Team",
+      "source": {
+        "id": null,
+        "name": "Finextra"
+      },
+      "url": "https://www.finextra.com/event-info/577/how-smart-fis-are-achieving-their-ai-transformation-targets",
+      "urlToImage": "https://www.finextra.com/finextra-images/top_pics/xl/appian-logo-jpg.jpg",
+      "publishedAt": "2025-10-23T15:05:10Z",
+      "publishedAtFormatted": "2025-10-23 15:05:10 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "<ul><li>How have AI applications been successfully implemented in the financial services sector over the past year, and what have institutions learned about what ‘works and what doesn’t with AI trans… [+2302 chars]",
+      "wordCount": 32
+    },
+    {
+      "title": "Exploring how AI could shape the future of student learning",
+      "description": "As students settle into the new school year, one question looms large: How will artificial intelligence tools like ChatGPT affect their learning? Seeking answers, a team from Johns Hopkins recently introduced a chatbot into a classroom of middle and high scho…",
+      "author": "Katy Bowman",
+      "source": {
+        "id": null,
+        "name": "Phys.Org"
+      },
+      "url": "https://phys.org/news/2025-10-exploring-ai-future-student.html",
+      "urlToImage": "https://scx2.b-cdn.net/gfx/news/hires/2025/classroom-8.jpg",
+      "publishedAt": "2025-10-23T14:13:04Z",
+      "publishedAtFormatted": "2025-10-23 14:13:04 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "As students settle into the new school year, one question looms large: How will artificial intelligence tools like ChatGPT affect their learning? Seeking answers, a team from Johns Hopkins recently i… [+6406 chars]",
+      "wordCount": 33
+    },
+    {
+      "title": "US AI revenue in 2025 nearly double closest competitor – analysis",
+      "description": "GlobalData’s AI Global Market Opportunity Forecasts to 2029 report indicates that the US AI market will generate $41bn this year.",
+      "author": "GlobalData",
+      "source": {
+        "id": null,
+        "name": "Verdict"
+      },
+      "url": "https://www.verdict.co.uk/us-ai-revenue-in-2025-nearly-double-closest-competitor-analysis/",
+      "urlToImage": "https://s.yimg.com/ny/api/res/1.2/TyV4.CyZPRPqqG8KlCISOA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzU-/https://media.zenfs.com/en/verdict_626/fa4d83f93eed0bcbb7605cccc7b7183e",
+      "publishedAt": "2025-10-23T14:12:17Z",
+      "publishedAtFormatted": "2025-10-23 14:12:17 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "The US dominates the global artificial intelligence (AI) market at present and will command nearly twice as much revenue than its closest competitor in 2025, new research forecasts.\r\nGlobalDatas AI G… [+3650 chars]",
+      "wordCount": 33
+    },
+    {
+      "title": "Evaluating Uighur literary translation: A comparative study of ChatGPT, Google Translate, and Bing Translator",
+      "description": "This study compares generative artificial intelligence (GenAI) and neural machine translation (NMT) systems in translating Uighur literary text (قۇتادغۇ بىلىك)into English. Two NMT systems, Google Translate and Bing Translator, were evaluated alongside ChatGP…",
+      "author": "Qiufen Wang",
+      "source": {
+        "id": null,
+        "name": "Plos.org"
+      },
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0335261",
+      "urlToImage": "https://journals.plos.org/plosone/article/figure/image?id=10.1371/journal.pone.0335261.g004&size=inline",
+      "publishedAt": "2025-10-23T14:00:00Z",
+      "publishedAtFormatted": "2025-10-23 14:00:00 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "Abstract\r\nThis study compares generative artificial intelligence (GenAI) and neural machine translation (NMT) systems in translating Uighur literary text ( )into English. Two NMT systems, Google Tran… [+60553 chars]",
+      "wordCount": 29
+    },
+    {
+      "title": "Front Desk Robotics: Revolutionizing the Hospitality Experience and Expected to Hit $1 Billion by 2030",
+      "description": "The hospitality robots market is expanding rapidly, driven by technological advancements, labor shortages, and rising demand for contactless services. Key opportunities lie in enhancing guest experiences, operational efficiency, and brand differentiation thro…",
+      "author": "Research and Markets",
+      "source": {
+        "id": null,
+        "name": "GlobeNewswire"
+      },
+      "url": "https://www.globenewswire.com/news-release/2025/10/23/3171746/28124/en/Front-Desk-Robotics-Revolutionizing-the-Hospitality-Experience-and-Expected-to-Hit-1-Billion-by-2030.html",
+      "urlToImage": "https://ml.globenewswire.com/Resource/Download/908fb457-7f8e-4a08-9081-5565e3dfb3d7",
+      "publishedAt": "2025-10-23T08:04:00Z",
+      "publishedAtFormatted": "2025-10-23 08:04:00 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "Dublin, Oct. 23, 2025 (GLOBE NEWSWIRE) -- The \"Hospitality Robots - Global Strategic Business Report\" has been added to ResearchAndMarkets.com's offering.\r\nThe global market for Hospitality Robots wa… [+16004 chars]",
+      "wordCount": 30
+    },
+    {
+      "title": "Uber Wants Drivers To Train AI While Waiting For Their Next Ride",
+      "description": "Uber is rolling out a new program that lets drivers train AI while they are waiting for their next ride. Here's how it works and where it's available.",
+      "author": "Nate Williams",
+      "source": {
+        "id": null,
+        "name": "SlashGear"
+      },
+      "url": "https://www.slashgear.com/2004713/uber-driver-ai-training-task-program/",
+      "urlToImage": "https://s.yimg.com/ny/api/res/1.2/_uIiabUOUbuFm0oZNC7USg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02NzQ-/https://media.zenfs.com/en/slash_gear_112/55249cef7c3073bbbe174b176dbbdaf5",
+      "publishedAt": "2025-10-23T00:15:00Z",
+      "publishedAtFormatted": "2025-10-23 00:15:00 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "Uber is testing a new way to keep its U.S. drivers busy and earning money. But, oddly enough, it has nothing to do with driving people around or delivering meals to doorsteps. Through a new pilot pro… [+3646 chars]",
+      "wordCount": 39
+    },
+    {
+      "title": "Sumble launches with $38.5M to expand AI-powered go-to-market intelligence platform",
+      "description": "Intelligence platform startup Sumble Inc. formally launched today with an announcement that it has raised $38.5 million in new funding. It plans to use the money to expand its artificial intelligence-powered go-to-market intelligence platform, enhance integra…",
+      "author": "Duncan Riley",
+      "source": {
+        "id": null,
+        "name": "SiliconANGLE News"
+      },
+      "url": "https://siliconangle.com/2025/10/22/sumble-launches-38-5m-expand-ai-powered-go-market-intelligence-platform/",
+      "urlToImage": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2025/10/sumble.png",
+      "publishedAt": "2025-10-22T23:25:47Z",
+      "publishedAtFormatted": "2025-10-22 23:25:47 UTC",
+      "publishedDate": "2025-10-22",
+      "content": "Intelligence platform startup Sumble Inc. formally launched today with an announcement that it has raised $38.5 million in new funding.\r\nIt plans to use the money to expand its artificial intelligenc… [+3595 chars]",
+      "wordCount": 33
+    },
+    {
+      "title": "Geoffrey Hinton, Yoshua Bengio sign statement urging suspension of AGI development",
+      "description": "Hundreds of scientists, politicians, entrepreneurs and artists have signed a statement urging the suspension of efforts to develop artificial general intelligence, or AGI. The brief document was published today on the website of the Future of Life Institute, …",
+      "author": "Maria Deutscher",
+      "source": {
+        "id": null,
+        "name": "SiliconANGLE News"
+      },
+      "url": "https://siliconangle.com/2025/10/22/geoffrey-hinton-yoshua-bengio-sign-statement-urging-suspension-agi-development/",
+      "urlToImage": "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2025/10/AI-1.png",
+      "publishedAt": "2025-10-22T19:45:53Z",
+      "publishedAtFormatted": "2025-10-22 19:45:53 UTC",
+      "publishedDate": "2025-10-22",
+      "content": "Hundreds of scientists, politicians, entrepreneurs and artists have signed a statement urging the suspension of efforts to develop artificial general intelligence, or AGI.\r\nThe brief document was pub… [+3935 chars]",
+      "wordCount": 30
+    },
+    {
+      "title": "North America Marketing Automation Market Market Size 2026 | Strategy, Smart Innovations & Key Players 2033",
+      "description": "North America Marketing Automation Market Market Size 2026 | Strategy, Smart Innovations & Key Players 2033linkedin.com",
+      "author": "Synergy Business Advisors",
+      "source": {
+        "id": null,
+        "name": "Linkedin.com"
+      },
+      "url": "https://www.linkedin.com/pulse/h1north-america-marketing-automation-market-size-dyqgc",
+      "urlToImage": "https://media.licdn.com/dms/image/v2/D5612AQEuH5VjTsKQJw/article-cover_image-shrink_600_2000/B56ZoJbOJ2I8AQ-/0/1761094722635?e=2147483647&v=beta&t=BIen5dubsUYeVNDH81G7z5w-nW4yhFTlBuv8RraPkFs",
+      "publishedAt": "2025-10-22T17:46:54Z",
+      "publishedAtFormatted": "2025-10-22 17:46:54 UTC",
+      "publishedDate": "2025-10-22",
+      "content": "The North America marketing automation market has emerged as a pivotal component of the digital transformation landscape, driven by the rapid adoption of technology-enabled marketing strategies acros… [+11564 chars]",
+      "wordCount": 29
+    },
+    {
+      "title": "Revolutionizing Investment Analysis with Generative AI (Vishal Rodage)",
+      "description": "Introduction Quick, accurate and data-driven decision making is key in the ever-changing world of in...",
+      "author": "Editorial Team",
+      "source": {
+        "id": null,
+        "name": "Finextra"
+      },
+      "url": "https://www.finextra.com/blogposting/29645/revolutionizing-investment-analysis-with-generative-ai",
+      "urlToImage": "https://www.finextra.com/finextra-images/member_photos/thumb_170199_vishal_rodage_142.jpg",
+      "publishedAt": "2025-10-22T17:36:55Z",
+      "publishedAtFormatted": "2025-10-22 17:36:55 UTC",
+      "publishedDate": "2025-10-22",
+      "content": "Introduction\r\nQuick, accurate and data-driven decision making is key in the ever-changing world of investment management. One of the crucial aspects of investment decision making process is analysis … [+6395 chars]",
+      "wordCount": 31
+    },
+    {
+      "title": "AI company Anthropic in talks with Google for multi-billion dollar Cloud deal — What we know",
+      "description": "Anthropic PBC is negotiating with Google for a deal to gain significant cloud computing resources, potentially worth tens of billions. The agreement would allow Anthropic to utilise Google's TPUs to enhance its AI capabilities.&nbsp;",
+      "author": "Livemint",
+      "source": {
+        "id": null,
+        "name": "Livemint"
+      },
+      "url": "https://www.livemint.com/companies/news/ai-company-anthropic-in-talks-with-google-multi-billion-dollar-cloud-computing-deal-use-tpus-claude-what-we-know-us-news-11761150933036.html",
+      "urlToImage": "https://www.livemint.com/lm-img/img/2025/10/22/1600x900/ANTHROPIC-FUNDING-17_1761153545348_1761153565197.jpg",
+      "publishedAt": "2025-10-22T17:24:34Z",
+      "publishedAtFormatted": "2025-10-22 17:24:34 UTC",
+      "publishedDate": "2025-10-22",
+      "content": "Claude maker Anthropic PBC is in talks with Alphabet's Google for a multi-billion dollar deal that would provide the artificial intelligence (AI) company with additional computing power and access to… [+2069 chars]",
+      "wordCount": 32
+    },
+    {
+      "title": "Want to upskill in AI for free? Google has 3,000 new courses for you - and certificates to go with them",
+      "description": "With the new Google Skills online platform, you can sign up for different courses and labs to learn AI.",
+      "author": "Lance Whitney",
+      "source": {
+        "id": null,
+        "name": "ZDNet"
+      },
+      "url": "https://www.zdnet.com/article/want-to-upskill-in-ai-for-free-google-has-3000-new-courses-for-you-and-certificates-to-go-with-them/",
+      "urlToImage": "https://www.zdnet.com/a/img/resize/c05b4a587f4d7802e0eed2de0586798e9ef7d4e2/2025/10/22/66bfcfbb-bdd3-483d-901c-26abd9d45f6b/gettyimages-2166130918.jpg?auto=webp&fit=crop&height=675&width=1200",
+      "publishedAt": "2025-10-22T15:37:17Z",
+      "publishedAtFormatted": "2025-10-22 15:37:17 UTC",
+      "publishedDate": "2025-10-22",
+      "content": "Screenshot by Lance Whitney/ZDNET\r\nFollow ZDNET: Add us as a preferred source on Google.\r\nZDNET's key takeaways\r\n<ul><li>Google Skills offers more than 3,000 classes in AI, many for free.</li><li>The… [+3999 chars]",
+      "wordCount": 31
+    },
+    {
+      "title": "Conservative Activist Sues Google Over False AI-Generated Claims Of Child Rape, Abuse",
+      "description": "Robby Starbuck sued Google on Tuesday for allegedly spreading \"radioactive lies\" about his past through its AI products for nearly two years.",
+      "author": "Katelynn Richardson",
+      "source": {
+        "id": null,
+        "name": "The Daily Caller"
+      },
+      "url": "https://dailycaller.com/2025/10/23/conservative-sues-google-over-false-ai-claims-child-rape-abuse/",
+      "urlToImage": "https://images.dailycaller.com/image/width=1280,height=549,fit=cover,format=webp,f=auto/https://cdn01.dailycaller.com/wp-content/uploads/2025/10/GettyImages-1310198305-scaled-e1761243365154.jpg",
+      "publishedAt": "2025-10-23T19:17:11Z",
+      "publishedAtFormatted": "2025-10-23 19:17:11 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "Filmaker and conservative activist Robby Starbuck sued Google on Tuesday for allegedly spreading “radioactive lies” about his past through its artificial intelligence (AI) products, including false c… [+4214 chars]",
+      "wordCount": 29
+    },
+    {
+      "title": "Conservative activist sues Google over AI-generated statements",
+      "description": "Conservative activist Robby Starbuck has sued Google, claiming its AI tools spread false and damaging claims about him, including accusations of sexual assault and violence. He says Google ignored his complaints and seeks $15 million in damages. Google admits…",
+      "author": "Reuters",
+      "source": {
+        "id": "the-times-of-india",
+        "name": "The Times of India"
+      },
+      "url": "https://economictimes.indiatimes.com/tech/artificial-intelligence/conservative-activist-sues-google-over-ai-generated-statements/articleshow/124753340.cms",
+      "urlToImage": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-73606,resizemode-75,msid-124753340/tech/artificial-intelligence/conservative-activist-sues-google-over-ai-generated-statements.jpg",
+      "publishedAt": "2025-10-23T04:49:41Z",
+      "publishedAtFormatted": "2025-10-23 04:49:41 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "Conservative activistRobby Starbuck sued Google on Wednesday, alleging the tech giant's artificial intelligence systems generated \"outrageously false\" information about him. Starbuck said in the laws… [+2037 chars]",
+      "wordCount": 27
+    },
+    {
+      "title": "Conservative activist sues Google over AI-generated statements",
+      "description": "The lawsuit comes amid growing concerns about how AI fuels the spread of misinformation.",
+      "author": "Al Jazeera",
+      "source": {
+        "id": "al-jazeera-english",
+        "name": "Al Jazeera English"
+      },
+      "url": "https://www.aljazeera.com/economy/2025/10/22/conservative-activist-sues-google-over-ai-generated-statements",
+      "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2025/10/2025-05-14T023551Z_1454450626_RC2AHEA3KVHV_RTRMADP_3_ALPHABET-RESULTS-1761157796.jpg?resize=1920%2C1440",
+      "publishedAt": "2025-10-22T19:22:48Z",
+      "publishedAtFormatted": "2025-10-22 19:22:48 UTC",
+      "publishedDate": "2025-10-22",
+      "content": "Conservative activist Robby Starbuck sued Google, alleging that the tech giants artificial intelligence systems generated outrageously false information about him.\r\nOn Wednesday, Starbuck said in the… [+2457 chars]",
+      "wordCount": 28
+    },
+    {
+      "title": "Robby Starbuck sues Google after AI bot accused him of sex assault, links to white supremacist",
+      "description": "Starbuck has racked up wins by forcing some of America's largest companies to roll back diversity, equity and inclusion (DEI) initiatives.",
+      "author": "Ariel Zilber",
+      "source": {
+        "id": null,
+        "name": "New York Post"
+      },
+      "url": "https://nypost.com/2025/10/22/business/robby-starbuck-sues-google-after-ai-bot-accused-him-of-sex-assault/",
+      "urlToImage": "https://nypost.com/wp-content/uploads/sites/2/2025/10/113965057.jpg?quality=75&strip=all&w=1200",
+      "publishedAt": "2025-10-22T15:36:34Z",
+      "publishedAtFormatted": "2025-10-22 15:36:34 UTC",
+      "publishedDate": "2025-10-22",
+      "content": "Conservative influencer Robby Starbuck is suing Google after he alleged that its artificial intelligence-powered chatbot falsely linked him to a sexual assault allegation as well as to notorious whit… [+2623 chars]",
+      "wordCount": 31
+    },
+    {
+      "title": "OpenAI just launched a browser that changes everything",
+      "description": "OpenAI just made its biggest move yet beyond chatbots, unveiling a brand new web browser that puts artificial intelligence at the center of how people navigate the internet. The company revealed ChatGPT Atlas during a livestream announcement, introducing a br…",
+      "author": "David Kesiena",
+      "source": {
+        "id": null,
+        "name": "Rolling Out"
+      },
+      "url": "https://rollingout.com/2025/10/21/openai-chatgpt-atlas-browser-launch/",
+      "urlToImage": "https://rollingout.com/wp-content/uploads/2025/10/shutterstock_2672699475-scaled.jpg",
+      "publishedAt": "2025-10-21T16:50:52Z",
+      "publishedAtFormatted": "2025-10-21 16:50:52 UTC",
+      "publishedDate": "2025-10-21",
+      "content": "A brief video clip lasting just five seconds was all it took to send shockwaves through the technology sector on Tuesday. OpenAI posted a teaser on social media platform X showing three simple tabs l… [+5035 chars]",
+      "wordCount": 37
+    },
+    {
+      "title": "Google CEO Sundar Pichai shares what it was like to be an AI leader and then get beaten to the market by OpenAI with ChatGPT",
+      "description": "Google CEO Sundar Pichai shared what it was like to get beat to market by OpenAI with ChatGPT and says the startup deserved credit.",
+      "author": "kvlamis@businessinsider.com (Kelsey Vlamis)",
+      "source": {
+        "id": "business-insider",
+        "name": "Business Insider"
+      },
+      "url": "https://www.businessinsider.com/sundar-pichai-google-ai-beat-by-openai-chatgpt-launch-2025-10",
+      "urlToImage": "https://i.insider.com/68f17ec5cc993f9955d05dfa?width=1200&format=jpeg",
+      "publishedAt": "2025-10-16T23:41:07Z",
+      "publishedAtFormatted": "2025-10-16 23:41:07 UTC",
+      "publishedDate": "2025-10-16",
+      "content": "When a little-known startup called OpenAI released its artificial intelligence chatbot, it was a seminal moment that kicked off the current era of AI.\r\nBut what was the \"ChatGPT moment\" like for Goog… [+2359 chars]",
+      "wordCount": 35
+    },
+    {
+      "title": "10 ChatGPT prompt tricks I use - to get the best results, faster",
+      "description": "Want better ChatGPT answers? It all starts with your prompts. Here's how to optimize your inputs.",
+      "author": "David Gewirtz",
+      "source": {
+        "id": null,
+        "name": "ZDNet"
+      },
+      "url": "https://www.zdnet.com/article/10-chatgpt-prompt-tricks-i-use-to-get-the-best-results-faster/",
+      "urlToImage": "https://www.zdnet.com/a/img/resize/cc08a1d8426981e906bf1178ebcccb207df7d892/2025/10/16/efa1953d-d7c3-4f0b-9ab6-b31757ae9753/gettyimages-2162021891.jpg?auto=webp&fit=crop&height=675&width=1200",
+      "publishedAt": "2025-10-16T13:36:00Z",
+      "publishedAtFormatted": "2025-10-16 13:36:00 UTC",
+      "publishedDate": "2025-10-16",
+      "content": "Andriy Onufriyenko / Moment / Getty Images\r\nFollow ZDNET: Add us as a preferred source on Google.\r\nZDNET's key takeaways\r\n<ul><li>Here's how to write prompts for more accurate ChatGPT responses.</li>… [+9977 chars]",
+      "wordCount": 32
+    },
+    {
+      "title": "Levin Papantonio Attorneys to Lead Key Sessions at MTMP Fall Conference, Highlighting Referral Opportunities in High-Profile Litigations",
+      "description": "Levin Papantonio attorneys will speak at sessions at MTMP Fall 2025, Las Vegas, spotlighting referral opportunities in today’s top mass tort litigations.",
+      "author": "Levin Papantonio",
+      "source": {
+        "id": null,
+        "name": "GlobeNewswire"
+      },
+      "url": "https://www.globenewswire.com/news-release/2025/10/09/3164648/7663/en/Levin-Papantonio-Attorneys-to-Lead-Key-Sessions-at-MTMP-Fall-Conference-Highlighting-Referral-Opportunities-in-High-Profile-Litigations.html",
+      "urlToImage": "https://ml.globenewswire.com/Resource/Download/aff17638-d06f-4534-a184-cf7d8a869575",
+      "publishedAt": "2025-10-09T21:15:00Z",
+      "publishedAtFormatted": "2025-10-09 21:15:00 UTC",
+      "publishedDate": "2025-10-09",
+      "content": "Levin Papantonio attorney Sara Papantonio speaks to an audience of mass torts attorneys at the MTMP Spring 2025 conference. She will be updating attorneys on the NEC Preterm Infant Formula MDL at MTM… [+9823 chars]",
+      "wordCount": 35
+    },
+    {
+      "title": "The AI Tsunami: Is Assistive Intelligence the Way to Navigate the Waves of Innovation in Finance? (Erica Andersen)",
+      "description": "The financial industry is experiencing a seismic shift. The buzz surrounding Artificial Intelligenc",
+      "author": "Editorial Team",
+      "source": {
+        "id": null,
+        "name": "Finextra"
+      },
+      "url": "https://www.finextra.com/blogposting/29459/the-ai-tsunami-is-assistive-intelligence-the-way-to-navigate-the-waves-of-innovation-in-finance",
+      "urlToImage": "https://www.finextra.com/finextra-images/member_photos/thumb_162616_erica_andersen_12.jpg",
+      "publishedAt": "2025-09-28T07:48:53Z",
+      "publishedAtFormatted": "2025-09-28 07:48:53 UTC",
+      "publishedDate": "2025-09-28",
+      "content": "The financial industry is experiencing a seismic shift. The buzz surrounding Artificial Intelligence (AI) is no longer a whisper; it's a roar, echoing through boardrooms and trading floors alike. Fro… [+8358 chars]",
+      "wordCount": 32
+    },
+    {
+      "title": "Millions of Buildings Threatened by Rising Seas This Century, Study Warns",
+      "description": "Rising seas threaten millions of lives and livelihoods in coastal regions, along with untold swaths of vital infrastructure.",
+      "author": "Russell McLendon",
+      "source": {
+        "id": null,
+        "name": "ScienceAlert"
+      },
+      "url": "https://www.sciencealert.com/millions-of-buildings-threatened-by-rising-seas-this-century-study-warns",
+      "urlToImage": "https://www.sciencealert.com/images/2025/10/CityRelectedInWater.jpg",
+      "publishedAt": "2025-10-23T23:02:50Z",
+      "publishedAtFormatted": "2025-10-23 23:02:50 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "Rising seas threaten millions of lives and livelihoods in coastal regions, along with untold swaths of vital infrastructure. A new study clarifies, for the first time, the overall danger rising sea l… [+4693 chars]",
+      "wordCount": 34
+    },
+    {
+      "title": "Populism Fast and Slow",
+      "description": "It is natural that a person who is both concerned by the rise of right-wing populism and possessed of a bookish disposition might turn to the academic political science literature in search of a better understanding of the phenomenon.",
+      "author": "Joseph Heath",
+      "source": {
+        "id": null,
+        "name": "Substack.com"
+      },
+      "url": "https://josephheath.substack.com/p/populism-fast-and-slow",
+      "urlToImage": "https://substackcdn.com/image/fetch/$s_!j4iI!,w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff2b913e0-374c-4801-8020-4b4466857af9_957x703.jpeg",
+      "publishedAt": "2025-10-23T22:43:15Z",
+      "publishedAtFormatted": "2025-10-23 22:43:15 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "It is natural that a person who is both concerned by the rise of right-wing populism and possessed of a bookish disposition might turn to the academic political science literature in search of a bett… [+24073 chars]",
+      "wordCount": 37
+    },
+    {
+      "title": "SerpApi’s Public Customer List",
+      "description": "See how SerpApi can benefit your business. From SEO rankings to news monitoring and machine learning applications, among others.",
+      "author": "John Gruber",
+      "source": {
+        "id": null,
+        "name": "Serpapi.com"
+      },
+      "url": "https://serpapi.com/use-cases",
+      "urlToImage": null,
+      "publishedAt": "2025-10-23T22:30:18Z",
+      "publishedAtFormatted": "2025-10-23 22:30:18 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "At the bottom of their “Use Cases” page, SerpApi lists the following companies and organizations as customers (“They trust us. You are in good company. Join them.”):\n\n<ul>\n<li>Airbnb</li>\n<li>Nvidia<… [+789 chars]",
+      "wordCount": 32
+    },
+    {
+      "title": "AI holds a place in our lives. How do we make it fit?",
+      "description": "San Diegans in the workplace and in education are hoping artificial intelligence will enhance what we can do without replacing us in the process.",
+      "author": "Thomas Fudge",
+      "source": {
+        "id": null,
+        "name": "KPBS"
+      },
+      "url": "https://www.kpbs.org/news/local/2025/10/23/ai-holds-a-place-in-our-lives-how-do-we-make-it-fit",
+      "urlToImage": "https://cdn.kpbs.org/dims4/default/83a9709/2147483647/strip/true/crop/2856x1499+0+321/resize/1200x630!/quality/90/?url=http%3A%2F%2Fkpbs-brightspot.s3.us-west-2.amazonaws.com%2F92%2Fbe%2Fe315e3304196835bbd4ff070efcc%2Fpaul.jpg",
+      "publishedAt": "2025-10-23T22:07:11Z",
+      "publishedAtFormatted": "2025-10-23 22:07:11 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "An animated video conceived by McAuley Buhlis shows, among others, a pot-smoking elf and a hyper-aggressive security guard. They are characters in a Dungeons and Dragons campaign, for which Buhlis is… [+4871 chars]",
+      "wordCount": 33
+    },
+    {
+      "title": "calibrated-explanations 0.8.0",
+      "description": "Extract calibrated explanations from machine learning models.",
+      "author": "helena.lofstrom@ju.se, tuwe.lofstrom@ju.se",
+      "source": {
+        "id": null,
+        "name": "Pypi.org"
+      },
+      "url": "https://pypi.org/project/calibrated-explanations/0.8.0/",
+      "urlToImage": null,
+      "publishedAt": "2025-10-23T22:00:30Z",
+      "publishedAtFormatted": "2025-10-23 22:00:30 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "A required part of this site couldnt load. This may be due to a browser\r\n extension, network issues, or browser settings. Please check your\r\n connection, disable any ad blockers, or try using a diffe… [+12 chars]",
+      "wordCount": 36
+    },
+    {
+      "title": "Cubic DTECH Mission Solutions Announces Fusion Edge High Performance Compute (eHPC) Platform Receives Amazon Web Services Internet of Things (IoT) Greengrass Certification",
+      "description": "Expanding the range of cloud technologies, tailored to mission requirementsSAN DIEGO – October 15, 2025 –Cubic DTECH Mission Solutions, a recognized industry leader in providing trusted, scalable, and intuitive edge compute and networking platforms, announces…",
+      "author": "Eric G",
+      "source": {
+        "id": null,
+        "name": "Soldiersystems.net"
+      },
+      "url": "https://soldiersystems.net/2025/10/23/cubic-dtech-mission-solutions-announces-fusion-edge-high-performance-compute-ehpc-platform-receives-amazon-web-services-internet-of-things-iot-greengrass-certification/",
+      "urlToImage": null,
+      "publishedAt": "2025-10-23T22:00:00Z",
+      "publishedAtFormatted": "2025-10-23 22:00:00 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "Expanding the range of cloud technologies, tailored to mission requirements\r\nSAN DIEGO October 15, 2025 Cubic DTECH Mission Solutions, a recognized industry leader in providing trusted, scalable, and… [+2173 chars]",
+      "wordCount": 30
+    },
+    {
+      "title": "Required Reading",
+      "description": "This week: an homage to the Young Lords, wool in Armenia, AI is not your friend, remembering Miss Major Griffin-Gracy, whale personhood, cuffing season at Frieze, and more.",
+      "author": "Lakshmi Rivera Amin",
+      "source": {
+        "id": null,
+        "name": "Hyperallergic"
+      },
+      "url": "http://hyperallergic.com/1051753/required-reading-756/",
+      "urlToImage": "https://hyperallergic-newspack.s3.amazonaws.com/uploads/2025/10/lilit-m-yerevan-wool.jpeg",
+      "publishedAt": "2025-10-23T21:25:51Z",
+      "publishedAtFormatted": "2025-10-23 21:25:51 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "Success! Your account was created and youre signed in.Please visit My Account to verify and manage your account.\r\nAn account was already registered with this email. Please check your inbox for an aut… [+9684 chars]",
+      "wordCount": 35
+    },
+    {
+      "title": "8 Approaches To Make A Living In The Online Gambling Industry",
+      "description": "Online Casinos In Addition To Profitability: Just How Can These People Make Money? Content Progressive Jackpot Feature Slots Gambling Online: The Basics How Much Period Does It Consider To ... Read More →\nThe post 8 Approaches To Make A Living In The Online G…",
+      "author": "Kate Dagli",
+      "source": {
+        "id": null,
+        "name": "Line25.com"
+      },
+      "url": "https://line25.com/articles/8-approaches-to-make-a-living-in-the-online-gambling-industry/",
+      "urlToImage": null,
+      "publishedAt": "2025-10-23T21:05:55Z",
+      "publishedAtFormatted": "2025-10-23 21:05:55 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "Home » Articles » 8 Approaches To Make A Living In The Online Gambling Industry\r\nLine25 is reader supported. At no cost to you a commission from sponsors may be earned when a purchase is made via lin… [+26008 chars]",
+      "wordCount": 40
+    },
+    {
+      "title": "EA triples down on AI tech with $20 billion in debt looming, partnering with the Stable Diffusion devs to \"creatively direct the generation of game content\"",
+      "description": "\"These are just a few examples of what is to come\"",
+      "author": "dustin.bailey@futurenet.com (Dustin Bailey) , Dustin Bailey",
+      "source": {
+        "id": null,
+        "name": "GamesRadar+"
+      },
+      "url": "https://www.gamesradar.com/games/ea-triples-down-on-ai-tech-with-usd20-billion-in-debt-looming-partnering-with-the-stable-diffusion-devs-to-creatively-direct-the-generation-of-game-content/",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/r4EjMCMPisT2LQBVByX4p-1920-80.jpg",
+      "publishedAt": "2025-10-23T20:56:04Z",
+      "publishedAtFormatted": "2025-10-23 20:56:04 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "For better or worse, EA has been at the forefront of implementing machine learning technology in game development, and its investment in AI isn't about to change as the company soon comes under new o… [+3705 chars]",
+      "wordCount": 37
+    },
+    {
+      "title": "PS6 Price Is Great Deal Compared to Next Xbox, Leaker Says",
+      "description": "The PS6 rumors continue to spiral. From release dates to prices, there are plenty leaks and speculation about Sony Interactive Entertainment’s next console. The latest is about its price and it seems it might be a great deal when compared to the next Xbox, if…",
+      "author": "Michael Ruiz",
+      "source": {
+        "id": null,
+        "name": "PlayStation LifeStyle"
+      },
+      "url": "https://www.playstationlifestyle.net/2025/10/23/ps6-price-great-deal-compared-to-next-xbox-leak/",
+      "urlToImage": "https://www.playstationlifestyle.net/wp-content/uploads/sites/9/2025/03/ps-xbox.jpg?resize=1200,630",
+      "publishedAt": "2025-10-23T20:54:06Z",
+      "publishedAtFormatted": "2025-10-23 20:54:06 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "The PS6 rumors continue to spiral. From release dates to prices, there are plenty leaks and speculation about Sony Interactive Entertainments next console. The latest is about its price and it seems … [+1492 chars]",
+      "wordCount": 35
+    },
+    {
+      "title": "Incorporating responsible AI into generative AI project prioritization",
+      "description": "In this post, we explore how companies can systematically incorporate responsible AI practices into their generative AI project prioritization methodology to better evaluate business value against costs while addressing novel risks like hallucination and regu…",
+      "author": "Randy DeFauw",
+      "source": {
+        "id": null,
+        "name": "Amazon.com"
+      },
+      "url": "https://aws.amazon.com/blogs/machine-learning/incorporating-responsible-ai-into-generative-ai-project-prioritization/",
+      "urlToImage": "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/10/23/raigenai.png",
+      "publishedAt": "2025-10-23T20:51:41Z",
+      "publishedAtFormatted": "2025-10-23 20:51:41 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "Over the past two years, companies have seen an increasing need to develop a project prioritization methodology for generative AI. There is no shortage of generative AI use cases to consider. Rather,… [+10274 chars]",
+      "wordCount": 34
+    },
+    {
+      "title": "3 Microsoft Certifications To Put On Your Resume For $160,000+ Jobs",
+      "description": "Upskill in AI and cloud development, pass the Microsoft certification exam, and add the certificate to your resume. Here are three to put in your resume for 2026.",
+      "author": "Rachel Wells, Contributor, \n Rachel Wells, Contributor\n https://www.forbes.com/sites/rachelwells/",
+      "source": {
+        "id": null,
+        "name": "Forbes"
+      },
+      "url": "https://www.forbes.com/sites/rachelwells/2025/10/23/3-microsoft-certifications-to-put-on-your-resume-for-160000-jobs/",
+      "urlToImage": "https://imageio.forbes.com/specials-images/imageserve/68fa8c80539032d497bdd26e/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+      "publishedAt": "2025-10-23T20:24:54Z",
+      "publishedAtFormatted": "2025-10-23 20:24:54 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "Microsoft certifications verify your cloud and AI competency via rigorous exams\r\ngetty\r\nStop listing Microsoft Office or Excel on your resume. Unless the job listing specifically calls for it (and if… [+5712 chars]",
+      "wordCount": 33
+    },
+    {
+      "title": "NIQ Publishes 2025 ESG Progress Report: Advancing Integrity, Innovation, and Impact",
+      "description": "CHICAGO — NIQ (NYSE: NIQ), a leading consumer intelligence company, today released its 2025 Environmental, Social, and Governance (ESG) Progress Report, covering its progress in 2024 and underscoring the company’s commitment to responsible business, data inte…",
+      "author": "Business Wire",
+      "source": {
+        "id": "financial-post",
+        "name": "Financial Post"
+      },
+      "url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/niq-publishes-2025-esg-progress-report-advancing-integrity-innovation-and-impact",
+      "urlToImage": null,
+      "publishedAt": "2025-10-23T20:15:20Z",
+      "publishedAtFormatted": "2025-10-23 20:15:20 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "CHICAGO NIQ (NYSE: NIQ), a leading consumer intelligence company, today released its 2025 Environmental, Social, and Governance (ESG) Progress Report, covering its progress in 2024 and underscoring t… [+5773 chars]",
+      "wordCount": 30
+    },
+    {
+      "title": "Kim Kardashian Reveals Brain Aneurysm Diagnosis Linked To “Extreme Stress” From Kanye West Divorce In Emotional ‘The Kardashians’ Premiere",
+      "description": "Kim Kardashian just shared some personal news that had fans shocked and concerned. In the season 7 premiere of The Kardashians, which premiered today, the 45-year-old reality star opened up about l…",
+      "author": "Erin Whitten",
+      "source": {
+        "id": null,
+        "name": "Thoughtcatalog.com"
+      },
+      "url": "https://thoughtcatalog.com/erinwhitten/2025/10/kim-kardashian-reveals-brain-aneurysm-diagnosis-linked-to-extreme-stress-from-kanye-west-divorce-in-emotional-the-kardashians-premiere/",
+      "urlToImage": "https://thoughtcatalog.com/wp-content/uploads/2025/10/4ab075b1b5c155dc2713d29790aa6e0999-1-Kanye-West.webp?w=1300&h=768&crop=1",
+      "publishedAt": "2025-10-23T19:34:16Z",
+      "publishedAtFormatted": "2025-10-23 19:34:16 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "Kim Kardashian just shared some personal news that had fans shocked and concerned. In the season 7 premiere of The Kardashians, which premiered today, the 45-year-old reality star opened up about lea… [+2714 chars]",
+      "wordCount": 34
+    },
+    {
+      "title": "Show HN: BesiegeField – LLM Agents Learn to Build Machines in a Physics Sandbox",
+      "description": "Hi HN! We'd like to share something we built: BesiegeField — an environment where large language models design, test, and refine machines in the physics-based construction game Besiege.Machine design is treated as a code generation problem: LLMs choose standa…",
+      "author": "zepist",
+      "source": {
+        "id": null,
+        "name": "Github.io"
+      },
+      "url": "https://besiegefield.github.io/",
+      "urlToImage": null,
+      "publishedAt": "2025-10-23T19:28:25Z",
+      "publishedAtFormatted": "2025-10-23 19:28:25 UTC",
+      "publishedDate": "2025-10-23",
+      "content": "We demonstrate the motion mechanism of a human-designed trebuchet a powerful medieval type of catapult.\r\n Each component works in close coordination, enabling the machine to launch the projectile muc… [+191 chars]",
+      "wordCount": 31
+    }
+  ]
+}

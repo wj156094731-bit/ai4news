@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & LLM News Analysis Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .card h2 {
+            color: #4a5568;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .stat-item {
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-label {
+            color: #718096;
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+
+        .controls {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .controls h2 {
+            color: #4a5568;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .filter-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .filter-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .filter-item label {
+            font-weight: 600;
+            color: #4a5568;
+            margin-bottom: 8px;
+        }
+
+        .filter-item input,
+        .filter-item select {
+            padding: 12px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .filter-item input:focus,
+        .filter-item select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: #e2e8f0;
+            color: #4a5568;
+        }
+
+        .btn-secondary:hover {
+            background: #cbd5e0;
+        }
+
+        .articles-section {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .articles-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .articles-count {
+            font-size: 1.2rem;
+            color: #4a5568;
+            font-weight: 600;
+        }
+
+        .sort-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .article-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+            background: #fafafa;
+        }
+
+        .article-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .article-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .article-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2d3748;
+            line-height: 1.4;
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .article-meta {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 5px;
+        }
+
+        .article-source {
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .article-date {
+            color: #718096;
+            font-size: 0.9rem;
+        }
+
+        .article-description {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .article-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .article-author {
+            color: #718096;
+            font-size: 0.9rem;
+        }
+
+        .article-link {
+            background: #48bb78;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .article-link:hover {
+            background: #38a169;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 300px;
+            margin: 20px 0;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #718096;
+        }
+
+        .error {
+            background: #fed7d7;
+            color: #c53030;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px;
+            color: #718096;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            .dashboard {
+                grid-template-columns: 1fr;
+            }
+            
+            .filter-group {
+                grid-template-columns: 1fr;
+            }
+            
+            .article-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .article-meta {
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 AI & LLM News Analysis Dashboard</h1>
+            <p>Interactive exploration of Artificial Intelligence and Large Language Model news articles</p>
+        </div>
+
+        <div class="dashboard">
+            <div class="card">
+                <h2>📊 Overview Statistics</h2>
+                <div class="stats-grid" id="statsGrid">
+                    <div class="stat-item">
+                        <div class="stat-number" id="totalArticles">-</div>
+                        <div class="stat-label">Total Articles</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="uniqueSources">-</div>
+                        <div class="stat-label">Unique Sources</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="dateRange">-</div>
+                        <div class="stat-label">Date Range</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="avgWords">-</div>
+                        <div class="stat-label">Avg Words</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>📈 Source Distribution</h2>
+                <div class="chart-container">
+                    <canvas id="sourceChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <h2>🔍 Search & Filter</h2>
+            <div class="filter-group">
+                <div class="filter-item">
+                    <label for="searchInput">Search Articles</label>
+                    <input type="text" id="searchInput" placeholder="Search titles, descriptions, or content...">
+                </div>
+                <div class="filter-item">
+                    <label for="sourceFilter">Filter by Source</label>
+                    <select id="sourceFilter">
+                        <option value="">All Sources</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label for="dateFilter">Filter by Date</label>
+                    <input type="date" id="dateFilter">
+                </div>
+            </div>
+            <div class="button-group">
+                <button class="btn btn-primary" onclick="applyFilters()">Apply Filters</button>
+                <button class="btn btn-secondary" onclick="clearFilters()">Clear All</button>
+                <button class="btn btn-secondary" onclick="exportData()">Export CSV</button>
+            </div>
+        </div>
+
+        <div class="articles-section">
+            <div class="articles-header">
+                <div class="articles-count" id="articlesCount">Loading articles...</div>
+                <div class="sort-controls">
+                    <label for="sortSelect">Sort by:</label>
+                    <select id="sortSelect" onchange="sortArticles()">
+                        <option value="publishedAt">Date (Newest)</option>
+                        <option value="publishedAt-asc">Date (Oldest)</option>
+                        <option value="source">Source</option>
+                        <option value="title">Title</option>
+                    </select>
+                </div>
+            </div>
+            <div id="articlesContainer">
+                <div class="loading">Loading articles...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let articlesData = [];
+        let filteredArticles = [];
+        let sourceChart = null;
+
+        // Load data when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            loadArticlesData();
+        });
+
+        async function loadArticlesData() {
+            try {
+                const response = await fetch('ai_news_articles.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                
+                articlesData = data.articles || [];
+                filteredArticles = [...articlesData];
+                
+                updateStatistics(data.statistics);
+                populateSourceFilter(data.statistics.source_distribution);
+                renderArticles();
+                createSourceChart(data.statistics.source_distribution);
+                
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('articlesContainer').innerHTML = 
+                    '<div class="error">Error loading articles data. Please ensure ai_news_articles.json exists.</div>';
+            }
+        }
+
+        function updateStatistics(stats) {
+            document.getElementById('totalArticles').textContent = stats.total_articles || 0;
+            document.getElementById('uniqueSources').textContent = stats.unique_sources || 0;
+            
+            const dateRange = stats.date_range;
+            if (dateRange && dateRange.earliest && dateRange.latest) {
+                document.getElementById('dateRange').textContent = 
+                    `${dateRange.earliest} to ${dateRange.latest}`;
+            } else {
+                document.getElementById('dateRange').textContent = 'N/A';
+            }
+            
+            const wordStats = stats.word_count_stats;
+            if (wordStats && wordStats.average) {
+                document.getElementById('avgWords').textContent = Math.round(wordStats.average);
+            } else {
+                document.getElementById('avgWords').textContent = 'N/A';
+            }
+        }
+
+        function populateSourceFilter(sourceDistribution) {
+            const sourceFilter = document.getElementById('sourceFilter');
+            const sources = Object.keys(sourceDistribution || {}).sort();
+            
+            sources.forEach(source => {
+                const option = document.createElement('option');
+                option.value = source;
+                option.textContent = `${source} (${sourceDistribution[source]})`;
+                sourceFilter.appendChild(option);
+            });
+        }
+
+        function createSourceChart(sourceDistribution) {
+            const ctx = document.getElementById('sourceChart').getContext('2d');
+            
+            if (sourceChart) {
+                sourceChart.destroy();
+            }
+            
+            const sources = Object.keys(sourceDistribution || {});
+            const counts = Object.values(sourceDistribution || {});
+            
+            // Get top 10 sources
+            const sortedData = sources.map((source, index) => ({
+                source,
+                count: counts[index]
+            })).sort((a, b) => b.count - a.count).slice(0, 10);
+            
+            sourceChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: sortedData.map(item => item.source),
+                    datasets: [{
+                        data: sortedData.map(item => item.count),
+                        backgroundColor: [
+                            '#667eea', '#764ba2', '#f093fb', '#f5576c',
+                            '#4facfe', '#00f2fe', '#43e97b', '#38f9d7',
+                            '#ffecd2', '#fcb69f'
+                        ],
+                        borderWidth: 2,
+                        borderColor: '#fff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                padding: 20,
+                                usePointStyle: true
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderArticles() {
+            const container = document.getElementById('articlesContainer');
+            const countElement = document.getElementById('articlesCount');
+            
+            if (filteredArticles.length === 0) {
+                container.innerHTML = '<div class="no-results">No articles match your current filters.</div>';
+                countElement.textContent = '0 articles found';
+                return;
+            }
+            
+            countElement.textContent = `${filteredArticles.length} articles found`;
+            
+            const articlesHTML = filteredArticles.map(article => `
+                <div class="article-card">
+                    <div class="article-header">
+                        <div class="article-title">${article.title}</div>
+                        <div class="article-meta">
+                            <div class="article-source">${article.source.name}</div>
+                            <div class="article-date">${article.publishedAtFormatted}</div>
+                        </div>
+                    </div>
+                    <div class="article-description">${article.description}</div>
+                    <div class="article-footer">
+                        <div class="article-author">By ${article.author}</div>
+                        <a href="${article.url}" target="_blank" class="article-link">Read Full Article</a>
+                    </div>
+                </div>
+            `).join('');
+            
+            container.innerHTML = articlesHTML;
+        }
+
+        function applyFilters() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const sourceFilter = document.getElementById('sourceFilter').value;
+            const dateFilter = document.getElementById('dateFilter').value;
+            
+            filteredArticles = articlesData.filter(article => {
+                // Search filter
+                const matchesSearch = !searchTerm || 
+                    article.title.toLowerCase().includes(searchTerm) ||
+                    article.description.toLowerCase().includes(searchTerm) ||
+                    (article.content && article.content.toLowerCase().includes(searchTerm));
+                
+                // Source filter
+                const matchesSource = !sourceFilter || article.source.name === sourceFilter;
+                
+                // Date filter
+                const matchesDate = !dateFilter || article.publishedDate === dateFilter;
+                
+                return matchesSearch && matchesSource && matchesDate;
+            });
+            
+            renderArticles();
+        }
+
+        function clearFilters() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('sourceFilter').value = '';
+            document.getElementById('dateFilter').value = '';
+            filteredArticles = [...articlesData];
+            renderArticles();
+        }
+
+        function sortArticles() {
+            const sortBy = document.getElementById('sortSelect').value;
+            
+            filteredArticles.sort((a, b) => {
+                switch (sortBy) {
+                    case 'publishedAt':
+                        return new Date(b.publishedAt) - new Date(a.publishedAt);
+                    case 'publishedAt-asc':
+                        return new Date(a.publishedAt) - new Date(b.publishedAt);
+                    case 'source':
+                        return a.source.name.localeCompare(b.source.name);
+                    case 'title':
+                        return a.title.localeCompare(b.title);
+                    default:
+                        return 0;
+                }
+            });
+            
+            renderArticles();
+        }
+
+        function exportData() {
+            if (filteredArticles.length === 0) {
+                alert('No articles to export. Please adjust your filters.');
+                return;
+            }
+            
+            const csvContent = [
+                ['Title', 'Source', 'Author', 'Published Date', 'Description', 'URL'],
+                ...filteredArticles.map(article => [
+                    `"${article.title.replace(/"/g, '""')}"`,
+                    `"${article.source.name}"`,
+                    `"${article.author}"`,
+                    `"${article.publishedDate}"`,
+                    `"${article.description.replace(/"/g, '""')}"`,
+                    `"${article.url}"`
+                ])
+            ].map(row => row.join(',')).join('\n');
+            
+            const blob = new Blob([csvContent], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `ai_news_articles_${new Date().toISOString().split('T')[0]}.csv`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }
+
+        // Add real-time search
+        document.getElementById('searchInput').addEventListener('input', function() {
+            clearTimeout(this.searchTimeout);
+            this.searchTimeout = setTimeout(applyFilters, 300);
+        });
+    </script>
+</body>
+</html>
+
+
