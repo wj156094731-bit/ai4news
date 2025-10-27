@@ -5,6 +5,7 @@ Build a Python script to automatically extract titles, dates, and keywords from 
 
 ## Input
 - Use the 5 English news articles already provided in the workspace
+- Articles are located in: `../sample_news_articles/` folder
 - Each article has format: Title, Publication Date, Content
 
 ## Your Task
@@ -14,7 +15,4 @@ Create `process_news.py` that:
 3. Outputs everything to `news_data.csv`
 
 ## Expected Output
-```csv
-filename,title,publish_date,keyword1,keyword2,keyword3
-article1.txt,Breaking News Title,2025-10-26,keyword,keyword,keyword
-```
+Check the `sample_output.csv` file to see the expected format for your results.
