@@ -1,6 +1,6 @@
-filename,title,publish_date,keyword1,keyword2,keyword3
-advanced_materials_research.txt,Advanced Materials Science: Self-Healing Polymers and Metamaterials Enable Next-Generation Aerospace Applications,2025-10-12,healing,self,materials
-ai_healthcare_research.txt,Deep Learning Applications in Medical Image Analysis: A Comprehensive Review of Diagnostic Accuracy and Clinical Implementation,2025-10-20,learning,clinical,medical
-neuromorphic_computing.txt,Neuromorphic Computing Architecture: Brain-Inspired Processors Achieve 1000x Energy Efficiency for AI Workloads,2025-10-08,processing,neuromorphic,consumption
-quantum_breakthrough.txt,Quantum Computing Breakthrough: Error-Corrected Quantum Processors Achieve Fault-Tolerant Gate Operations with 99.9% Fidelity,2025-10-18,quantum,error,team
-renewable_grid_integration.txt,Renewable Energy Grid Integration: Novel Battery Storage Systems Enable 100% Renewable Power for Metropolitan Areas,2025-10-15,renewable,energy,generation
+filename,title,date,keyword1,keyword2,keyword3
+article1.txt,The Rise of Electric Cars,2024-06-15,battery,technology,charging
+article2.txt,Tech Stocks Rally After Earnings Beat,2024-07-02,earnings,cloud,advertising
+article3.txt,New Study Finds Climate Change Accelerates,2024-05-28,climate,study,events
+article4.txt,Breakthrough in Cancer Research Reported,2024-04-10,therapy,trial,results
+article5.txt,City Council Approves New Housing Plan,2024-08-01,housing,density,transit
